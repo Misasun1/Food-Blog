@@ -1,0 +1,268 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+    background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+    );
+    
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+
+    /*styling logo*/
+#logo {
+  width: 100px;
+  height: auto;
+  border-radius: 40%;
+}
+
+/* header styling*/
+.header {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*styling navigation header links*/
+.nav-header {
+  color: beige;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+
+/*styling a-child*/
+.nav-header ul li a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+.nav-header i{
+color: aliceblue;
+}
+
+
+.nav-header a:link{
+color: aliceblue;
+
+}
+
+.nav-header a:hover {
+  color: rgb(63, 116, 121);
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+
+ul li a {
+  font-size: 1.2rem;
+  color: beige;
+}
+
+/*Styling hero-nav*/
+.navigation-bar {
+  background: rgb(152, 226, 226);
+}
+
+/*styling navigation bar*/
+.navigation-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation-bar li {
+  list-style: none;
+  color: rgb(59, 59, 100);
+  font-size: 1.1rem;
+}
+.navigation-bar li:hover {
+  background-color: rgba(63, 116, 121, 0.447);
+  padding: 0.5rem;
+  color: rgb(216, 235, 237);
+  border-radius: 1rem;
+}
+
+hr{
+    border-color: rgb(212, 146, 198);
+}
+
+
+/*footer  general styling*/
+.Footer-container{
+  margin-top: 4rem;
+  background-size: 10em;
+  background-color: rgba(199, 69, 201, 0.534);
+
+
+}
+/*styling footer navigation bar*/
+.footer-navbar{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+
+
+li a:link{
+ text-decoration:none;
+ color:rgb(122, 49, 149) ;
+ list-style: none;
+
+}
+
+.footer-navbar>li{
+ color:rgb(122, 49, 149);
+ list-style: none;
+ 
+}
+
+.footer-navbar a:visited{
+color: inherit;
+}
+
+.footer-navbar a:hover{
+  color: rgb(13, 73, 70);
+  
+}
+
+/*adjusting logos and copywriting*/
+.copyright{
+  display: flex;
+  justify-content: center;
+  color: rgb(137, 28, 64);
+}
+
+.social-media-logos{
+  display: flex;
+  justify-content: center; 
+  margin-left: 5em; 
+  color: rgb(137, 28, 64);
+}
+
+/******************styling Recipe of the month page********************/
+
+h1{
+  color: aliceblue;
+  text-transform: uppercase;
+  border:dotted 0.5rem rgba(212, 65, 212, 0.581);
+  text-align: center;
+  
+}
+h2{
+  color: aliceblue;
+}
+
+
+.container-recipe{
+margin-left: 3em;
+margin-right: 3em;
+text-align: center;
+
+
+}
+
+h4{
+  color: rgb(152, 48, 165);
+  border-bottom: 0.3rem solid rgba(144, 209, 227, 0.597);
+  border-radius: 0.7em;
+  text-transform: uppercase;
+}
+
+p{
+  color: rgb(231, 223, 232);
+ 
+}
+
+.header-photo{
+position: relative;
+
+}
+
+.header-photo> .overlay-section{
+  position: absolute;
+  background-color: rgba(137, 43, 226, 0.573) ;
+  margin-top: -1%;
+  transition:5s ease;
+  display: inline-block;
+
+}
+
+.overlay-section:hover{
+margin-top: 25%;
+}
+
+li{
+  color: rgb(180, 108, 163);
+  list-style: none;
+
+}
+
+hr{
+  border: 0.1rem solid rgba(216, 112, 147, 0.51);
+}
+
+
+/*styling images*/
+#presentation-pix{
+  border: 5px solid rgb(238, 155, 238); 
+      outline: 3px dotted rgb(60, 146, 149); 
+      outline-offset: 10px; 
+}
+
+
+.maki2 img{
+  width: 500px;
+  height: auto;
+  border: 5px solid rgb(238, 155, 238); 
+  outline: 3px dotted rgb(60, 146, 149); 
+  outline-offset: 10px; 
+}
+
+.maki3 img{
+  width: 500px;
+  height: auto;
+  border: 5px solid rgb(238, 155, 238); 
+  outline: 3px dotted rgb(60, 146, 149); 
+  outline-offset: 10px; 
+}
+
+.maki4 img{
+  width: 500px;
+  height: auto;
+  border: 5px solid rgb(238, 155, 238); 
+  outline: 3px dotted rgb(60, 146, 149); 
+  outline-offset: 10px; 
+}
+
+/*styling color symbols*/
+.s{
+  color: gold;
+}
+
+.star-rating{
+  color: rgb(252, 249, 236);
+}
+
+.star-rating:hover{
+  color: rgb(234, 213, 123);
+}
+
+.level{
+  color: rgb(77, 77, 143);
+}

@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+
+
+}
+
+body{
+  background: rgb(238, 174, 202);
+background: radial-gradient(
+  circle,
+  rgba(238, 174, 202, 1) 0%,
+  rgba(148, 187, 233, 1) 100%
+  );
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+
+
+ } 
+
+
+
+/*media queries for desktop */
+@media only screen  and (min-width:768px){
+ 
+
+.container{
+
+display: grid;
+grid-template-columns:repeat(3,1fr) ;
+gap: 3em;
+margin: 3rem 9rem ;
+}
+
+
+/*styling direct child img*/
+  .img-food > img{
+   width: 320px;
+   height: 300px;
+   object-fit: cover;
+   object-position: center;
+   overflow: hidden; 
+ }
+
+ /*syling class img-food*/
+.img-food {
+  position: relative;
+}
+
+ .img-food p {
+  position: absolute;
+  background-color: rgba(137, 43, 226, 0.263);
+  width:72%;
+  top: 74%;
+  padding: 1.5rem;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+ }
+}
+
+
+/*media queries for tablet */
+@media only screen and (min-width:481px) and (max-width:768px){
+  
+
+    .container{
+
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 3em;
+      margin: 3rem 9rem ;
+      
+      }
+      
+
+
+      /*styling direct child img*/
+        .img-food > img{
+         width: 210px;
+         height: 190px;
+         object-fit: cover;
+         object-position: center;
+         overflow: hidden; 
+       }
+
+       /*syling class img-food*/
+        .img-food {
+       position: relative;
+        }
+
+
+       .img-food p {
+        position: absolute;
+        background-color: rgba(137, 43, 226, 0.263);
+        width:94%;
+        top: 80%;
+        padding: 0.4rem;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+       }
+ }
+
+/*media queries for mobile*/
+@media only screen  and (max-width: 480px) {
+
+
+    .container {
+      
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        gap: 3em;
+        margin: 3rem 5rem ;
+       
+      }
+
+      /*styling direct child img*/
+        .img-food > img{
+         width: 100px;
+         height: 100px;
+         object-fit: cover;
+         object-position: center;
+       }
+
+         /*syling class img-food*/
+         .img-food {
+          position: relative;
+          }
+
+
+       .img-food p {
+        position: absolute;
+        background-color: rgba(137, 43, 226, 0.263);
+        width:82%;
+        top: 71%;
+        padding: 1.5rem;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+       }
+
+
+ }
+
+
+/*styling logo*/
+#logo {
+  width: 100px;
+  height: auto;
+  border-radius: 40%;
+}
+
+/* header styling*/
+.header {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*styling navigation header links*/
+.nav-header {
+  color: beige;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+
+
+/*styling a-child*/
+.nav-header a {
+  text-decoration: none;
+ /* color: aliceblue;*/
+}
+
+.nav-header a:link{
+  color: aliceblue;
+}  
+
+a:visited {
+  color: inherit;
+}
+
+.nav-header a:hover {
+  color: rgb(63, 116, 121);
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+ul li a {
+  font-size: 1.2rem;
+}
+
+/*Styling hero-nav*/
+.navigation-bar {
+  background: rgb(152, 226, 226);
+}
+
+/*styling navigation bar*/
+.navigation-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navigation-bar li {
+  list-style: none;
+  color: rgb(59, 59, 100);
+  font-size: 1.1rem;
+}
+.navigation-bar li:hover {
+  background-color: rgba(63, 116, 121, 0.447);
+  padding: 0.5rem;
+  color: rgb(216, 235, 237);
+  border-radius: 1rem;
+}
+
+hr{
+    border-color: rgb(212, 146, 198);
+}
+
+/*footer  general styling*/
+.Footer-container{
+    margin-top: 4rem;
+    background-size: 10em;
+    background-color: rgba(199, 69, 201, 0.534);
+
+
+}
+/*styling footer navigation bar*/
+.footer-navbar{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+li a:link{
+   text-decoration:none;
+   color:rgb(122, 49, 149) ;
+   list-style: none;
+
+}
+
+.footer-navbar>li{
+   color:rgb(122, 49, 149);
+   list-style: none;
+   
+}
+
+.footer-navbar a:visited{
+color: inherit;
+}
+
+.footer-navbar a:hover{
+    color: rgb(13, 73, 70);
+    
+}
+
+/*adjusting logos and copywriting*/
+.copyright{
+    display: flex;
+    justify-content: center;
+    color: rgb(137, 28, 64);
+}
+
+.social-media-logos{
+    display: flex;
+    justify-content: center; 
+    margin-left: 5em; 
+    color: rgb(137, 28, 64);
+}
+
+
