@@ -183,13 +183,12 @@ h3{
 #image3 { 
 position: absolute;
     top: 6%; 
-    transition-behavior: 10s ease-in;
 }
 
 #image3:hover{
      
     position: relative;
-   /* height: 100%;*/
+   transition: .5s ease-in-out;
 } 
 
 

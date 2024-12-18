@@ -102,6 +102,31 @@ hr{
 }
 
 
+#SwalBtn{
+  background-color: aquamarine;
+  outline: 2px solid pink ;
+  font-weight: 700;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  color: rgb(184, 114, 184);
+  border: pink;
+  border-radius: 5%;
+ 
+}
+
+#SwalBtn:hover{
+  background-color: rgb(116, 207, 177);
+  outline: 5px dashed pink ;
+  font-weight: 700;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: rgb(237, 219, 237);
+  border: pink;
+  padding: 8px 15px;
+
+  
+}
+
 /*footer  general styling*/
 .Footer-container{
   margin-top: 4rem;
@@ -261,7 +286,10 @@ hr{
 
 .star-rating:hover{
   color: rgb(234, 213, 123);
+  
 }
+
+
 
 .level{
   color: rgb(77, 77, 143);

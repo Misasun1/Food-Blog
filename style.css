@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing:border-box;
 
 
 }
@@ -22,6 +23,7 @@ background: radial-gradient(
 
 
 
+
 /*media queries for desktop */
 @media only screen  and (min-width:768px){
  
@@ -29,7 +31,7 @@ background: radial-gradient(
 .container{
 
 display: grid;
-grid-template-columns:repeat(3,1fr) ;
+grid-template-columns:repeat(3, 1fr) ;
 gap: 3em;
 margin: 3rem 9rem ;
 }
@@ -37,8 +39,9 @@ margin: 3rem 9rem ;
 
 /*styling direct child img*/
   .img-food > img{
-   width: 320px;
-   height: 300px;
+
+   width: 380px;
+   height: 320px;
    object-fit: cover;
    object-position: center;
    overflow: hidden; 
@@ -47,23 +50,35 @@ margin: 3rem 9rem ;
  /*syling class img-food*/
 .img-food {
   position: relative;
+  width: 100%;
+  max-width: 600px;
+  
 }
 
  .img-food p {
   position: absolute;
   background-color: rgba(137, 43, 226, 0.263);
-  width:72%;
-  top: 74%;
-  padding: 1.5rem;
+  width:100%;
+-webkit-transform: translate(-50% -50%) ;
+text-align: center;
+transform: translate(-50% -50%);
+  box-sizing: border-box;
+  padding: 1rem;
   color: aliceblue;
   display: flex;
+  /*  */
   justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 6px;
+  height: 30%;
+
  }
 }
 
 
 /*media queries for tablet */
-@media only screen and (min-width:481px) and (max-width:768px){
+@media only screen and (max-width:482px) {
   
 
     .container{
@@ -79,7 +94,7 @@ margin: 3rem 9rem ;
 
       /*styling direct child img*/
         .img-food > img{
-         width: 210px;
+         width: 100%;
          height: 190px;
          object-fit: cover;
          object-position: center;
@@ -101,11 +116,15 @@ margin: 3rem 9rem ;
         color: aliceblue;
         display: flex;
         justify-content: center;
+        align-items: center;
+        left: 0;
+        bottom: 6px;
+        height: 30%;
        }
  }
 
 /*media queries for mobile*/
-@media only screen  and (max-width: 480px) {
+@media only screen  and (min-width: 480px) {
 
 
     .container {
@@ -119,8 +138,8 @@ margin: 3rem 9rem ;
 
       /*styling direct child img*/
         .img-food > img{
-         width: 100px;
-         height: 100px;
+         width: 100%;
+         height: 350px;
          object-fit: cover;
          object-position: center;
        }
@@ -134,12 +153,16 @@ margin: 3rem 9rem ;
        .img-food p {
         position: absolute;
         background-color: rgba(137, 43, 226, 0.263);
-        width:82%;
-        top: 71%;
+        width: 100% ;
+        /* top: 71%; */
         padding: 1.5rem;
         color: aliceblue;
         display: flex;
         justify-content: center;
+        align-items: center;
+        left: 0;
+        bottom: 6px;
+        height: 30%;
        }
 
 
@@ -175,7 +198,6 @@ margin: 3rem 9rem ;
 /*styling a-child*/
 .nav-header a {
   text-decoration: none;
- /* color: aliceblue;*/
 }
 
 .nav-header a:link{
@@ -191,6 +213,7 @@ a:visited {
   font-size: 1.3rem;
   border-radius: 0.5rem;
   padding: 0.5rem;
+  transition: ease .5s;
 }
 
 ul li a {
@@ -200,6 +223,8 @@ ul li a {
 /*Styling hero-nav*/
 .navigation-bar {
   background: rgb(152, 226, 226);
+  padding: 5px;
+  
 }
 
 /*styling navigation bar*/
@@ -215,14 +240,30 @@ ul li a {
 }
 .navigation-bar li:hover {
   background-color: rgba(63, 116, 121, 0.447);
-  padding: 0.5rem;
+  border: 2px dashed rgb(219, 155, 176);
   color: rgb(216, 235, 237);
   border-radius: 1rem;
+  padding: 0 8px;
+  transition: ease-in-out .3s;
+
 }
 
 hr{
     border-color: rgb(212, 146, 198);
 }
+
+/* swiper styling */
+.swiper {
+  width: 600px;
+  height: 550px;
+}
+
+.swiper-slide {
+
+object-fit: cover;
+
+}
+
 
 /*footer  general styling*/
 .Footer-container{
