@@ -24,104 +24,8 @@ background: radial-gradient(
 
 
 
-/*media queries for desktop */
-@media only screen  and (min-width:768px){
+
  
-
-.container{
-
-display: grid;
-grid-template-columns:repeat(3, 1fr) ;
-gap: 3em;
-margin: 3rem 9rem ;
-}
-
-
-/*styling direct child img*/
-  .img-food > img{
-
-   width: 380px;
-   height: 320px;
-   object-fit: cover;
-   object-position: center;
-   overflow: hidden; 
- }
-
- /*syling class img-food*/
-.img-food {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  
-}
-
- .img-food p {
-  position: absolute;
-  background-color: rgba(137, 43, 226, 0.263);
-  width:100%;
--webkit-transform: translate(-50% -50%) ;
-text-align: center;
-transform: translate(-50% -50%);
-  box-sizing: border-box;
-  padding: 1rem;
-  color: aliceblue;
-  display: flex;
-  /*  */
-  justify-content: center;
-  align-items: center;
-  left: 0;
-  bottom: 6px;
-  height: 30%;
-
- }
-}
-
-
-/*media queries for tablet */
-@media only screen and (max-width:482px) {
-  
-
-    .container{
-
-      display: grid;
-      grid-template-columns: repeat(2,1fr);
-      gap: 3em;
-      margin: 3rem 9rem ;
-      
-      }
-      
-
-
-      /*styling direct child img*/
-        .img-food > img{
-         width: 100%;
-         height: 190px;
-         object-fit: cover;
-         object-position: center;
-         overflow: hidden; 
-       }
-
-       /*syling class img-food*/
-        .img-food {
-       position: relative;
-        }
-
-
-       .img-food p {
-        position: absolute;
-        background-color: rgba(137, 43, 226, 0.263);
-        width:94%;
-        top: 80%;
-        padding: 0.4rem;
-        color: aliceblue;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        left: 0;
-        bottom: 6px;
-        height: 30%;
-       }
- }
 
 /*media queries for mobile*/
 @media only screen  and (min-width: 480px) {
@@ -142,6 +46,10 @@ transform: translate(-50% -50%);
          height: 350px;
          object-fit: cover;
          object-position: center;
+         border: solid 5px rgb(209, 139, 189);
+         border-radius: 5%;
+         outline: dashed 2px rgb(94, 170, 193);
+
        }
 
          /*syling class img-food*/
@@ -167,6 +75,116 @@ transform: translate(-50% -50%);
 
 
  }
+
+
+/*media queries for tablet */
+@media only screen and (min-width:768px) {
+  
+
+    .container{
+
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 3em;
+      margin: 3rem 9rem ;
+      
+      }
+      
+
+
+      /*styling direct child img*/
+        .img-food > img{
+         width: 100%;
+         height: 190px;
+         object-fit: cover;
+         object-position: center;
+         overflow: hidden; 
+         border: solid 5px rgb(209, 139, 189);
+         border-radius: 5%;
+         outline: dashed 2px rgb(94, 170, 193);
+
+
+       }
+
+       /*syling class img-food*/
+        .img-food {
+       position: relative;
+        }
+
+
+       .img-food p {
+        position: absolute;
+        background-color: rgba(137, 43, 226, 0.263);
+        width:100%;
+        top: 80%;
+        padding: 1.5rem;
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        margin-top: -19px;
+        height: 18%;
+       }
+ }
+
+/*media queries for desktop */
+@media only screen  and (min-width:1200px){
+ 
+
+.container{
+
+display: grid;
+grid-template-columns:repeat(3, 1fr) ;
+gap: 3em;
+margin: 3rem 5rem ;
+text-align: center;
+}
+
+
+/*styling direct child img*/
+  .img-food > img{
+
+   width: 416px;
+   height: 320px;
+   border: solid 8px rgb(209, 139, 189);
+   object-fit: cover;
+   object-position: center;
+   overflow: hidden; 
+   border-radius: 5%;
+   outline: dashed 2px rgb(94, 170, 193);
+ }
+
+ /*syling class img-food*/
+.img-food {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  
+}
+
+ .img-food p {
+  position: absolute;
+  background-color: rgba(137, 43, 226, 0.263);
+  width:100%;
+  -webkit-transform: translate(-50% -50%) ;
+  text-align: center;
+  transform: translate(-50% -50%);
+  box-sizing: border-box;
+  padding: 1rem;
+  color: aliceblue;
+  display: flex;
+  /*  */
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  bottom: 6px;
+  height: 24%;
+  
+
+ }
+}
+
 
 
 /*styling logo*/
