@@ -200,6 +200,7 @@ text-align: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 /*styling navigation header links*/
@@ -216,6 +217,7 @@ text-align: center;
 /*styling a-child*/
 .nav-header a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .nav-header a:link{
@@ -242,6 +244,7 @@ ul li a {
 .navigation-bar {
   background: rgb(152, 226, 226);
   padding: 5px;
+  cursor: pointer;
   
 }
 

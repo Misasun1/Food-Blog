@@ -77,6 +77,8 @@ ul li a {
 /*Styling hero-nav*/
 .navigation-bar {
   background: rgb(152, 226, 226);
+  cursor: pointer;
+
 }
 
 /*styling navigation bar*/
@@ -111,6 +113,7 @@ hr{
   color: rgb(184, 114, 184);
   border: pink;
   border-radius: 5%;
+  cursor: pointer;
  
 }
 

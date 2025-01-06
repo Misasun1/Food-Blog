@@ -67,6 +67,8 @@ ul li a {
 /*Styling hero-nav*/
 .navigation-bar {
   background: rgb(152, 226, 226);
+  cursor: pointer;
+
 }
 
 /*styling navigation bar*/
